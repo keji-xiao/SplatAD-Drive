@@ -1,0 +1,34 @@
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+py123d dataparser has missing dependencies; install py123d to enable py123d-data.
+Waymo dataparser has missing dependencies, please following installation instructions in README.md
+{
+  "python": "3.10.6 | packaged by conda-forge | (main, Aug 22 2022, 20:29:51) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\codex\\.venv-gpu\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "torch": "2.7.1+cu118",
+  "torch_cuda": "11.8",
+  "cuda_available": true,
+  "modules": {
+    "numpy": "C:\\codex\\.venv-gpu\\lib\\site-packages\\numpy\\__init__.py",
+    "PIL": "C:\\anconda\\envs\\3dgs\\lib\\site-packages\\PIL\\__init__.py",
+    "yaml": "C:\\codex\\.venv-gpu\\lib\\site-packages\\yaml\\__init__.py",
+    "pytest": "C:\\codex\\.venv-gpu\\lib\\site-packages\\pytest\\__init__.py",
+    "gsplat": "c:\\codex\\third_party\\splatad\\gsplat\\__init__.py",
+    "nerfstudio": "c:\\codex\\third_party\\neurad-studio\\nerfstudio\\__init__.py",
+    "tinycudann": "C:\\codex\\.venv-gpu\\lib\\site-packages\\tinycudann\\__init__.py",
+    "nerfstudio.models.splatad": "c:\\codex\\third_party\\neurad-studio\\nerfstudio\\models\\splatad.py",
+    "gsplat.rendering": "c:\\codex\\third_party\\splatad\\gsplat\\rendering.py"
+  },
+  "sources": {
+    "neurad-studio": "8ba9b5116b8a2822a80c64f63a4ae64c5871aa68",
+    "splatad": "6e31ad766d39e0c33f9034a2ed772d51364b2343"
+  },
+  "kernel_execution": "NOT_TESTED: run pytest -m cuda",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "gpu_total_bytes": 25769279488,
+  "blockers": [],
+  "official_training_ready": true
+}

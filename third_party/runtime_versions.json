@@ -1,0 +1,14 @@
+{
+  "tiny-cuda-nn": {
+    "url": "https://github.com/NVlabs/tiny-cuda-nn.git",
+    "commit": "749dd70c5afc5a9dadb85e5652ed65d55e0ba187",
+    "installed_version": "2.0",
+    "cuda_architecture": "86",
+    "build_script": "scripts/build_tinycudann_windows.cmd"
+  },
+  "viser": {
+    "url": "https://github.com/atonderski/viser.git",
+    "commit": "57142e42df8edd4de33fd60a08d6bb6c35970aa1",
+    "installed_version": "0.1.28"
+  }
+}

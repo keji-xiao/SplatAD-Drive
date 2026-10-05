@@ -1,0 +1,55 @@
+{
+  "kind": "real_cuda_resume_validation",
+  "runs": [
+    {
+      "directory": "C:\\codex\\outputs\\training\\resume_probe_3002\\splatad\\2026-09-27_052522_837826Z",
+      "completion": {
+        "returncode": 0,
+        "status": "exited_zero",
+        "finished_utc": "2026-09-27T05:27:07.619753+00:00"
+      },
+      "checkpoints": [
+        {
+          "path": "outputs\\training\\resume_probe_3002\\splatad\\2026-09-27_052522_837826Z\\nerfstudio_models\\step-000003000.ckpt",
+          "stored_step": 3000,
+          "completed_iterations": 3001,
+          "gaussian_count": 5000000,
+          "finite_tensors_checked": 136
+        },
+        {
+          "path": "outputs\\training\\resume_probe_3002\\splatad\\2026-09-27_052522_837826Z\\nerfstudio_models\\step-000003001.ckpt",
+          "stored_step": 3001,
+          "completed_iterations": 3002,
+          "gaussian_count": 5000000,
+          "finite_tensors_checked": 136
+        }
+      ]
+    },
+    {
+      "directory": "C:\\codex\\outputs\\training\\resume_roundtrip_3004\\splatad\\2026-09-27_052827_865034Z",
+      "completion": {
+        "returncode": 0,
+        "status": "exited_zero",
+        "finished_utc": "2026-09-27T05:30:02.658557+00:00"
+      },
+      "checkpoints": [
+        {
+          "path": "outputs\\training\\resume_roundtrip_3004\\splatad\\2026-09-27_052827_865034Z\\nerfstudio_models\\step-000003002.ckpt",
+          "stored_step": 3002,
+          "completed_iterations": 3003,
+          "gaussian_count": 5000000,
+          "finite_tensors_checked": 136
+        },
+        {
+          "path": "outputs\\training\\resume_roundtrip_3004\\splatad\\2026-09-27_052827_865034Z\\nerfstudio_models\\step-000003003.ckpt",
+          "stored_step": 3003,
+          "completed_iterations": 3004,
+          "gaussian_count": 5000000,
+          "finite_tensors_checked": 136
+        }
+      ]
+    }
+  ],
+  "status": "PASS",
+  "scope": "Real official CUDA training resumed twice (legacy -> resumable -> resumable), four added iterations, finite tensors, two atomic checkpoints per run; not a fresh quality evaluation or proof of GPU bitwise replay"
+}

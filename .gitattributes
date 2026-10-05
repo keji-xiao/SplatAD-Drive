@@ -1,0 +1,5 @@
+* text=auto
+*.sh text eol=lf
+# Preserve the exact evidence bytes used by summary.json SHA-256 records.
+outputs/** -text
+reports/tests_release.xml -text

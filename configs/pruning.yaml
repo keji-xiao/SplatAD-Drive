@@ -1,0 +1,8 @@
+# Offline candidate selection only. Not an unvalidated optimizer/MCMC mutation.
+camera_weight: 1.0
+lidar_weight: 2.0
+opacity_weight: 1.0
+score_threshold: 0.2
+opacity_threshold: 0.05
+strong_lidar_hit_threshold: 3
+min_actor_gaussians: 32

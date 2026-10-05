@@ -1,0 +1,25 @@
+C:\anconda\envs\3dgs\lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+============================= test session starts =============================
+platform win32 -- Python 3.10.6, pytest-9.1.1, pluggy-1.6.0 -- C:\codex\.venv-gpu\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\codex
+configfile: pyproject.toml
+plugins: anyio-4.15.1, jaxtyping-0.2.36, dash-3.3.0
+collecting ... collected 46 items / 44 deselected / 2 selected
+
+tests/test_cuda_rasterizers.py::test_official_lidar_explicit_per_beam_capture_times[-1.0] PASSED [ 50%]
+tests/test_cuda_rasterizers.py::test_official_lidar_explicit_per_beam_capture_times[1.0] PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_cuda_rasterizers.py::test_official_lidar_explicit_per_beam_capture_times[-1.0]
+  C:\anconda\envs\3dgs\lib\site-packages\torch\utils\cpp_extension.py:446: UserWarning: Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+    warnings.warn(f'Error checking compiler version for {compiler}: {error}')
+
+tests/test_cuda_rasterizers.py::test_official_lidar_explicit_per_beam_capture_times[-1.0]
+  C:\anconda\envs\3dgs\lib\site-packages\torch\utils\cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+  If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================ 2 passed, 44 deselected, 2 warnings in 4.72s =================

@@ -1,0 +1,66 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.6, pytest-9.1.1, pluggy-1.6.0 -- C:\codex\.venv-gpu\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\codex
+configfile: pyproject.toml
+plugins: dash-3.3.0
+collecting ... collected 44 items
+
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-RGB] PASSED [  2%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-D] PASSED [  4%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-ED] PASSED [  6%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-RGB+D] PASSED [  9%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-RGB+ED] PASSED [ 11%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-2-RGB] PASSED [ 13%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-2-D] PASSED [ 15%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-2-ED] PASSED [ 18%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-2-RGB+D] PASSED [ 20%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-2-RGB+ED] PASSED [ 22%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-3-RGB] PASSED [ 25%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-3-D] PASSED [ 27%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-3-ED] PASSED [ 29%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-3-RGB+D] PASSED [ 31%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-3-RGB+ED] PASSED [ 34%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-4-RGB] PASSED [ 36%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-4-D] PASSED [ 38%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-4-ED] PASSED [ 40%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-4-RGB+D] PASSED [ 43%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-4-RGB+ED] PASSED [ 45%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-1-RGB] PASSED [ 47%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-1-D] PASSED [ 50%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-1-ED] PASSED [ 52%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-1-RGB+D] PASSED [ 54%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-1-RGB+ED] PASSED [ 56%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-2-RGB] PASSED [ 59%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-2-D] PASSED [ 61%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-2-ED] PASSED [ 63%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-2-RGB+D] PASSED [ 65%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-2-RGB+ED] PASSED [ 68%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-3-RGB] PASSED [ 70%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-3-D] PASSED [ 72%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-3-ED] PASSED [ 75%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-3-RGB+D] PASSED [ 77%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-3-RGB+ED] PASSED [ 79%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-4-RGB] PASSED [ 81%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-4-D] PASSED [ 84%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-4-ED] PASSED [ 86%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-4-RGB+D] PASSED [ 88%]
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[moving-4-RGB+ED] PASSED [ 90%]
+tests/test_cuda_rasterizers.py::test_official_lidar_nonuniform_seam_range_forward_backward[static] PASSED [ 93%]
+tests/test_cuda_rasterizers.py::test_official_lidar_nonuniform_seam_range_forward_backward[moving] PASSED [ 95%]
+tests/test_cuda_rasterizers.py::test_reference_cpu_cuda_agree_and_backward[camera] PASSED [ 97%]
+tests/test_cuda_rasterizers.py::test_reference_cpu_cuda_agree_and_backward[lidar] PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-RGB]
+  C:\anconda\envs\3dgs\lib\site-packages\torch\utils\cpp_extension.py:446: UserWarning: Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+    warnings.warn(f'Error checking compiler version for {compiler}: {error}')
+
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-RGB]
+  C:\anconda\envs\3dgs\lib\site-packages\torch\utils\cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+  If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+---------- generated xml file: C:\codex\reports\cuda_rasterizers.xml ----------
+======================= 44 passed, 2 warnings in 4.51s ========================

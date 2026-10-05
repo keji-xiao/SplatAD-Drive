@@ -1,0 +1,17 @@
+C:\anconda\envs\3dgs\lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+........................s............................................... [ 34%]
+........................................................................ [ 69%]
+...............................................................          [100%]
+============================== warnings summary ===============================
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-RGB]
+  C:\anconda\envs\3dgs\lib\site-packages\torch\utils\cpp_extension.py:446: UserWarning: Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+    warnings.warn(f'Error checking compiler version for {compiler}: {error}')
+
+tests/test_cuda_rasterizers.py::test_official_camera_modes_rolling_shutter_forward_backward[static-1-RGB]
+  C:\anconda\envs\3dgs\lib\site-packages\torch\utils\cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+  If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+206 passed, 1 skipped, 2 warnings in 6.76s

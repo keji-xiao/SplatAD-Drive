@@ -1,0 +1,11 @@
+{
+  "neurad-studio": {
+    "url": "https://github.com/georghess/neurad-studio.git",
+    "commit": "8ba9b5116b8a2822a80c64f63a4ae64c5871aa68"
+  },
+  "splatad": {
+    "url": "https://github.com/carlinds/splatad.git",
+    "commit": "6e31ad766d39e0c33f9034a2ed772d51364b2343",
+    "glm_commit": "45008b225e28eb700fa0f7d3ff69b7c1db94fadf"
+  }
+}

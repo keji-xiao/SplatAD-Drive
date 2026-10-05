@@ -1,0 +1,7 @@
+==WARNING== Could not deploy stock section files to "C:\Users\qzy_2\Documents/NVIDIA Nsight Compute/2022.1.0/Sections".
+Set the HOME environment variable to a writable directory.
+==WARNING== Using "C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.1.0\target\windows-desktop-win7-x64\..\..\sections" instead.
+==WARNING== See https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#faq.
+==WARNING== No metrics to collect found in sections.
+==WARNING== No kernels were profiled.
+==WARNING== Profiling kernels launched by child processes requires the --target-processes all option.

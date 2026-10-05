@@ -1,0 +1,300 @@
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+{
+  "sequence": "028",
+  "split": "train",
+  "source": "official PandaSetDataParser",
+  "status": "REVIEW_REQUIRED",
+  "decision": "NO-GO",
+  "numeric_checks": {
+    "camera_se3": {
+      "status": "PASS",
+      "finite": true,
+      "se3_inverse_error": 1.3777595192721037e-05,
+      "se3_inverse_tolerance": 5.19256575696636e-05,
+      "input_dtype": "float32",
+      "rotation_orthogonality_error": 3.324274782112724e-07,
+      "rotation_determinant_error": 2.6778298833907144e-07,
+      "last_row_error": 0.0
+    },
+    "lidar_se3": {
+      "status": "PASS",
+      "finite": true,
+      "se3_inverse_error": 1.2071475005370758e-05,
+      "se3_inverse_tolerance": 5.0472667024005204e-05,
+      "input_dtype": "float32",
+      "rotation_orthogonality_error": 3.292173432756229e-07,
+      "rotation_determinant_error": 2.1046004816671626e-07,
+      "last_row_error": 0.0
+    },
+    "actor_se3": {
+      "0": {
+        "status": "PASS",
+        "finite": true,
+        "se3_inverse_error": 1.733378023516252e-05,
+        "se3_inverse_tolerance": 0.00011898387699853629,
+        "input_dtype": "float32",
+        "rotation_orthogonality_error": 1.9405721762844053e-07,
+        "rotation_determinant_error": 2.4891928185333256e-07,
+        "last_row_error": 0.0
+      },
+      "1": {
+        "status": "PASS",
+        "finite": true,
+        "se3_inverse_error": 2.3029855327649784e-05,
+        "se3_inverse_tolerance": 0.00011690069757401943,
+        "input_dtype": "float32",
+        "rotation_orthogonality_error": 1.8061340678610094e-07,
+        "rotation_determinant_error": 2.475939094859214e-07,
+        "last_row_error": 0.0
+      },
+      "2": {
+        "status": "PASS",
+        "finite": true,
+        "se3_inverse_error": 1.2191593640409337e-05,
+        "se3_inverse_tolerance": 8.27116348571144e-05,
+        "input_dtype": "float32",
+        "rotation_orthogonality_error": 2.3161363182921946e-07,
+        "rotation_determinant_error": 3.107967034843284e-07,
+        "last_row_error": 0.0
+      }
+    },
+    "camera_timestamps": {
+      "0": {
+        "count": 40,
+        "status": "PASS"
+      },
+      "1": {
+        "count": 40,
+        "status": "PASS"
+      },
+      "2": {
+        "count": 40,
+        "status": "PASS"
+      },
+      "3": {
+        "count": 40,
+        "status": "PASS"
+      },
+      "4": {
+        "count": 40,
+        "status": "PASS"
+      },
+      "5": {
+        "count": 40,
+        "status": "PASS"
+      }
+    },
+    "lidar_timestamps": {
+      "6": {
+        "count": 40,
+        "status": "PASS"
+      }
+    },
+    "actor_timestamps": {
+      "0": {
+        "status": "PASS"
+      },
+      "1": {
+        "status": "PASS"
+      },
+      "2": {
+        "status": "PASS"
+      }
+    },
+    "point_values": {
+      "status": "PASS",
+      "samples": [
+        {
+          "lidar_index": 0,
+          "points": 110696,
+          "finite": true,
+          "returned_points": 110696,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 2,
+          "points": 111170,
+          "finite": true,
+          "returned_points": 111170,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 4,
+          "points": 111175,
+          "finite": true,
+          "returned_points": 111175,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 6,
+          "points": 111280,
+          "finite": true,
+          "returned_points": 111280,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 8,
+          "points": 111060,
+          "finite": true,
+          "returned_points": 111060,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 10,
+          "points": 111096,
+          "finite": true,
+          "returned_points": 111096,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 12,
+          "points": 111216,
+          "finite": true,
+          "returned_points": 111216,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 14,
+          "points": 111150,
+          "finite": true,
+          "returned_points": 111150,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 16,
+          "points": 111154,
+          "finite": true,
+          "returned_points": 111154,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 18,
+          "points": 111247,
+          "finite": true,
+          "returned_points": 111247,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 20,
+          "points": 111147,
+          "finite": true,
+          "returned_points": 111147,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 22,
+          "points": 111161,
+          "finite": true,
+          "returned_points": 111161,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 24,
+          "points": 110430,
+          "finite": true,
+          "returned_points": 110430,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 26,
+          "points": 111024,
+          "finite": true,
+          "returned_points": 111024,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 28,
+          "points": 111038,
+          "finite": true,
+          "returned_points": 111038,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 30,
+          "points": 111053,
+          "finite": true,
+          "returned_points": 111053,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 32,
+          "points": 111218,
+          "finite": true,
+          "returned_points": 111218,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 34,
+          "points": 111109,
+          "finite": true,
+          "returned_points": 111109,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 36,
+          "points": 111171,
+          "finite": true,
+          "returned_points": 111171,
+          "nonreturns_excluded": 0
+        },
+        {
+          "lidar_index": 39,
+          "points": 111062,
+          "finite": true,
+          "returned_points": 111062,
+          "nonreturns_excluded": 0
+        }
+      ]
+    }
+  },
+  "numeric_status": "PASS",
+  "numeric_checks_passed": true,
+  "unit": "metre",
+  "camera_count": 240,
+  "lidar_count": 40,
+  "actor_count": 3,
+  "time_offset": 1557541275.000133,
+  "overlay_count": 120,
+  "overlay_counts_by_camera": {
+    "back": 20,
+    "front": 20,
+    "front_left": 20,
+    "front_right": 20,
+    "left": 20,
+    "right": 20
+  },
+  "blocking_issues": [
+    "Human review of road/vehicle/building overlays and trajectories has not been recorded.",
+    "Nominal-pose overlays do not independently validate camera rolling shutter or moving actor timing."
+  ],
+  "ego_reference": "Pandar64 trajectory proxy, not separately measured vehicle-body pose",
+  "lidar_columns": [
+    "x",
+    "y",
+    "z",
+    "intensity",
+    "point_relative_time"
+  ],
+  "timestamp_note": "sensor/actor times are parser-relative; per-point capture time = lidar time + column 4; point order need not be temporal",
+  "data": "C:\\codex\\data\\pandaset",
+  "parser_source_sha256": "89a67dddad07ac3a1efbd82b869b3c16b7467285182cdb9760694e9d05064452",
+  "actor_timing_diagnostics_count": 23,
+  "actor_timing_helper_sha256": "1ee3af3ffc232e55d8bdcdc765a62f1d704a8c0475962ce2e5c782468a2c88fc",
+  "parser_config": {
+    "train_split_fraction": 0.5,
+    "dataset_end_fraction": 1.0,
+    "cameras": [
+      "front",
+      "front_left",
+      "front_right",
+      "back",
+      "left",
+      "right"
+    ],
+    "allow_per_point_times": true,
+    "add_missing_points": false
+  }
+}

@@ -1,0 +1,11 @@
+name: resume_probe_3002
+sequence: '028'
+iterations: 3002
+seed: 42
+cameras: [front, front_left, front_right, back, left, right]
+dataset_end_fraction: 1.0
+data: data/pandaset
+output_dir: outputs/training
+vis: tensorboard
+checkpoint_interval: 1
+resume_checkpoint: outputs/training/intermediate_3000/splatad/2026-09-26_051956_834730Z/nerfstudio_models/step-000002999.ckpt

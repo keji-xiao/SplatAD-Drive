@@ -1,0 +1,551 @@
+{
+  "directory": "C:\\codex\\outputs\\training\\intermediate_3000\\splatad\\2026-09-26_051956_834730Z",
+  "checkpoints": [
+    {
+      "path": "C:\\codex\\outputs\\training\\intermediate_3000\\splatad\\2026-09-26_051956_834730Z\\nerfstudio_models\\step-000002999.ckpt",
+      "stored_step": 2999,
+      "completed_iterations": 3000,
+      "gaussian_count": 5000000,
+      "finite_tensors_checked": 134
+    }
+  ],
+  "scalars": {
+    "events.out.tfevents.1790400068.teamLi.13436.0/learning_rate/trajectory_opt": {
+      "finite": true,
+      "count": 3000,
+      "first_step": 0,
+      "last_step": 2999,
+      "first_value": 6.383122013176035e-07,
+      "last_value": 0.0009363327408209443
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/learning_rate/means": {
+      "finite": true,
+      "count": 3000,
+      "first_step": 0,
+      "last_step": 2999,
+      "first_value": 0.00015997544687706977,
+      "last_value": 0.000100953177025076
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/learning_rate/camera_velocity_opt_linear": {
+      "finite": true,
+      "count": 3000,
+      "first_step": 0,
+      "last_step": 2999,
+      "first_value": 1.5707956890764763e-06,
+      "last_value": 0.0006210169522091746
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/learning_rate/camera_velocity_opt_angular": {
+      "finite": true,
+      "count": 3000,
+      "first_step": 0,
+      "last_step": 2999,
+      "first_value": 3.1415913781529525e-07,
+      "last_value": 0.00011840574006782845
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/learning_rate/camera_velocity_opt_time_to_center_pixel": {
+      "finite": true,
+      "count": 3000,
+      "first_step": 0,
+      "last_step": 2999,
+      "first_value": 3.141592586075603e-08,
+      "last_value": 9.079810115508735e-05
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/learning_rate/fields": {
+      "finite": true,
+      "count": 3000,
+      "first_step": 0,
+      "last_step": 2999,
+      "first_value": 3.151556029479252e-06,
+      "last_value": 0.0010000000474974513
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Iter (time)": {
+      "finite": true,
+      "count": 3000,
+      "first_step": 0,
+      "last_step": 2999,
+      "first_value": 2.706433057785034,
+      "last_value": 0.13443823158740997
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/ETA (time)": {
+      "finite": true,
+      "count": 3000,
+      "first_step": 0,
+      "last_step": 2999,
+      "first_value": 8119.29931640625,
+      "last_value": 0.13443823158740997
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 0.32063984870910645,
+      "last_value": 0.06627640128135681
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss Dict/main_loss": {
+      "finite": true,
+      "count": 263,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 0.3177395761013031,
+      "last_value": 0.06474054604768753
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss Dict/mcmc_scale_reg": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 0.00040022534085437655,
+      "last_value": 7.54853172111325e-05
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss Dict/mcmc_opacity_reg": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 0.0024999999441206455,
+      "last_value": 0.001460195635445416
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss Dict/camera_velocity_regularizer": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 4.789760410517374e-08,
+      "last_value": 1.7681550446013716e-07
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/psnr": {
+      "finite": true,
+      "count": 263,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 12.497085571289062,
+      "last_value": 25.828344345092773
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/gaussian_count": {
+      "finite": true,
+      "count": 263,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 2604056.0,
+      "last_value": 5000000.0
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_vel_max": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 0.07637080550193787,
+      "last_value": 0.2771061062812805
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_vel_mean": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 0.04742632806301117,
+      "last_value": 0.17667441070079803
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ang_vel_max": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 7.689981430303305e-05,
+      "last_value": 7.40981922717765e-05
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ang_vel_mean": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 4.712731242761947e-05,
+      "last_value": 1.4110039046499878e-05
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ttc_pixel_adjustment_0": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": -1.6673534730671236e-07,
+      "last_value": -0.0006318231462500989
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ttc_pixel_adjustment_1": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 3.647449489108112e-07,
+      "last_value": 0.001228727982379496
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ttc_pixel_adjustment_2": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": -4.349543303305836e-07,
+      "last_value": 0.0017784457886591554
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ttc_pixel_adjustment_3": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": -2.52222889685072e-07,
+      "last_value": -0.0005446806899271905
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ttc_pixel_adjustment_4": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 4.4096029228057887e-07,
+      "last_value": -0.0007757474668323994
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ttc_pixel_adjustment_5": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 4.7819018078598674e-08,
+      "last_value": -0.0007300334400497377
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/camera_opt_ttc_pixel_adjustment_6": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": -2.2808306709976023e-07,
+      "last_value": -2.2808306709976023e-07
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/GPU Memory (MB)": {
+      "finite": true,
+      "count": 300,
+      "first_step": 0,
+      "last_step": 2990,
+      "first_value": 3176.171875,
+      "last_value": 9483.576171875
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Rays / Sec": {
+      "finite": true,
+      "count": 2998,
+      "first_step": 2,
+      "last_step": 2999,
+      "first_value": 50188748.0,
+      "last_value": 31413932.0
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss Dict/depth_loss": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 0.7994059324264526,
+      "last_value": 0.0357045941054821
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss Dict/intensity_loss": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 0.28594762086868286,
+      "last_value": 0.0038968194276094437
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss Dict/ray_drop_loss": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 0.10090605169534683,
+      "last_value": 0.011993985623121262
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Loss Dict/alpha_sum_until_points_loss": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 0.03827449679374695,
+      "last_value": 0.00992533192038536
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/depth_median_l2": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 64.07727813720703,
+      "last_value": 0.02258637174963951
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/depth_mean_rel_l2": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 1.5018317699432373,
+      "last_value": 0.021905940026044846
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/median_depth_median_l2": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 39.79512023925781,
+      "last_value": 0.006273060105741024
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/median_depth_mean_rel_l2": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 1.3329260349273682,
+      "last_value": 0.029047945514321327
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/intensity_rmse": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 0.5481708645820618,
+      "last_value": 0.07325640320777893
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Metrics Dict/ray_drop_accuracy": {
+      "finite": true,
+      "count": 37,
+      "first_step": 30,
+      "last_step": 2900,
+      "first_value": 0.031067395582795143,
+      "last_value": 0.9668757915496826
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Test Rays / Sec": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 361226.75,
+      "last_value": 635075.4375
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/psnr": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 21.383472442626953,
+      "last_value": 23.09873390197754
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/ssim": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 0.5894300937652588,
+      "last_value": 0.6989930868148804
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/lpips": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 0.6280885934829712,
+      "last_value": 0.5261138677597046
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/num_rays": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 2073600.0,
+      "last_value": 2073600.0
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/depth_median_l2": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 2.00184965133667,
+      "last_value": 0.007056259084492922
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/depth_mean_rel_l2": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 0.1010856181383133,
+      "last_value": 0.010062958113849163
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/median_depth_median_l2": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 0.008715189062058926,
+      "last_value": 0.002394347917288542
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/median_depth_mean_rel_l2": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 0.07388699799776077,
+      "last_value": 0.01124440599232912
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/intensity_rmse": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 0.09912408888339996,
+      "last_value": 0.06550047546625137
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/ray_drop_accuracy": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 0.9446265697479248,
+      "last_value": 0.9837647080421448
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/chamfer_distance": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 3.096806049346924,
+      "last_value": 0.5944982767105103
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics/median_chamfer_distance": {
+      "finite": true,
+      "count": 5,
+      "first_step": 500,
+      "last_step": 2500,
+      "first_value": 3.5459091663360596,
+      "last_value": 1.641019344329834
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/median_depth_mean_rel_l2": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.018133800476789474,
+      "last_value": 0.018133800476789474
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/num_camera_rays_per_sec": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 54830184.0,
+      "last_value": 54830184.0
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/intensity_rmse": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.06600360572338104,
+      "last_value": 0.06600360572338104
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/depth_mean_rel_l2": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.013755793683230877,
+      "last_value": 0.013755793683230877
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/ray_drop_accuracy": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.9807208776473999,
+      "last_value": 0.9807208776473999
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/ssim": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.6706046462059021,
+      "last_value": 0.6706046462059021
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/psnr": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 22.958675384521484,
+      "last_value": 22.958675384521484
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/median_depth_median_l2": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.0028758221305906773,
+      "last_value": 0.0028758221305906773
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/num_lidar_rays_per_sec": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 1044338.125,
+      "last_value": 1044338.125
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/fps": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 27.596643447875977,
+      "last_value": 27.596643447875977
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/lpips": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.4963396191596985,
+      "last_value": 0.4963396191596985
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/median_chamfer_distance": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 2.0195109844207764,
+      "last_value": 2.0195109844207764
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/depth_median_l2": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.011655979789793491,
+      "last_value": 0.011655979789793491
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Eval Images Metrics Dict (all images)/chamfer_distance": {
+      "finite": true,
+      "count": 1,
+      "first_step": 2500,
+      "last_step": 2500,
+      "first_value": 0.6081994771957397,
+      "last_value": 0.6081994771957397
+    },
+    "events.out.tfevents.1790400068.teamLi.13436.0/Train Total (time)": {
+      "finite": true,
+      "count": 1,
+      "first_step": 3000,
+      "last_step": 3000,
+      "first_value": 449.1791687011719,
+      "last_value": 449.1791687011719
+    }
+  },
+  "blockers": [],
+  "completion": {
+    "returncode": 0,
+    "status": "exited_zero",
+    "finished_utc": "2026-09-26T05:28:43.502302+00:00"
+  },
+  "expected_iterations": 3000,
+  "status": "PASS",
+  "scope": "Checkpoint tensor integrity, configured iteration completion and recorded joint-loss finiteness; not image quality, all unlogged iterations, held-out evaluation or paper reproduction"
+}

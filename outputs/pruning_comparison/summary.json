@@ -1,0 +1,128 @@
+{
+  "generated_utc": "2026-09-30T11:41:29.115171+00:00",
+  "scope": "Verified saved evidence for one local PandaSet 028 experiment; not deployment or multi-sequence paper reproduction",
+  "evaluation_scope": {
+    "camera_images": 240,
+    "lidar_sweeps": 40,
+    "sequence": "028",
+    "dataset_end_fraction": 1.0,
+    "train_split_fraction": 0.5
+  },
+  "quality": {
+    "psnr": {
+      "baseline": 25.196256637573242,
+      "pruned": 25.196256637573242,
+      "delta": 0.0
+    },
+    "ssim": {
+      "baseline": 0.783306896686554,
+      "pruned": 0.783306896686554,
+      "delta": 0.0
+    },
+    "lpips": {
+      "baseline": 0.21773694455623627,
+      "pruned": 0.21773694455623627,
+      "delta": 0.0
+    },
+    "intensity_rmse": {
+      "baseline": 0.05658213794231415,
+      "pruned": 0.05658213794231415,
+      "delta": 0.0
+    },
+    "ray_drop_accuracy": {
+      "baseline": 0.9825926423072815,
+      "pruned": 0.9825926423072815,
+      "delta": 0.0
+    },
+    "depth_median_l2": {
+      "baseline": 0.001612198888324201,
+      "pruned": 0.001612198888324201,
+      "delta": 0.0
+    },
+    "depth_mean_rel_l2": {
+      "baseline": 0.009039614349603653,
+      "pruned": 0.009039614349603653,
+      "delta": 0.0
+    },
+    "chamfer_distance": {
+      "baseline": 0.39105224609375,
+      "pruned": 0.39105224609375,
+      "delta": 0.0
+    }
+  },
+  "all_listed_quality_metrics_exact_equal": true,
+  "performance": {
+    "camera": {
+      "baseline_ms": 37.72922876739502,
+      "pruned_ms": 36.394174407958985,
+      "speedup": 1.036683188481508,
+      "baseline_fps": 26.504649913866874,
+      "pruned_fps": 27.476924982293635,
+      "baseline_peak_bytes": 4653307392,
+      "pruned_peak_bytes": 4317131264,
+      "scope": "process-wide PyTorch CUDA allocator; excludes non-PyTorch allocations"
+    },
+    "lidar": {
+      "baseline_ms": 159.60965185546874,
+      "pruned_ms": 125.91200889587404,
+      "speedup": 1.2676285070430555,
+      "baseline_fps": 6.265285265489643,
+      "pruned_fps": 7.942054207291491,
+      "baseline_peak_bytes": 3813043200,
+      "pruned_peak_bytes": 3225517056,
+      "scope": "process-wide PyTorch CUDA allocator; excludes non-PyTorch allocations"
+    }
+  },
+  "public_outputs": {
+    "public_outputs": {
+      "sensor_comparisons": 44,
+      "passed": 44,
+      "failed": 0,
+      "errors": 0,
+      "all_compared_tensors_exact_equal": true
+    },
+    "public_outputs_motion": {
+      "sensor_comparisons": 44,
+      "passed": 44,
+      "failed": 0,
+      "errors": 0,
+      "all_compared_tensors_exact_equal": true
+    }
+  },
+  "actor_edits": [
+    {
+      "actor_id": 0,
+      "restore_max_error": 0.0,
+      "parameters_restored": true,
+      "ego_relative_extrinsic_max_error": 1.4901161193847656e-08
+    },
+    {
+      "actor_id": 1,
+      "restore_max_error": 0.0,
+      "parameters_restored": true,
+      "ego_relative_extrinsic_max_error": 1.4901161193847656e-08
+    },
+    {
+      "actor_id": 2,
+      "restore_max_error": 0.0,
+      "parameters_restored": true,
+      "ego_relative_extrinsic_max_error": 1.4901161193847656e-08
+    }
+  ],
+  "tests": {
+    "total": 271,
+    "skipped": 1,
+    "failed": 0,
+    "passed": 270
+  },
+  "source_sha256": {
+    "outputs/eval_baseline_official.json": "42e5b0a2c3f852002fedddbe6d316d9235e2bb4bf8b61c5fc20a3e908885ff0c",
+    "outputs/eval_pruned_official.json": "ef412d99c8212b6599e11cca25822adedad4980e7b83f6126c03ccd481e6b031",
+    "outputs/profile_baseline_official.json": "2eefafadbb8217abd622cbdb0bcfea196e25e93e73d89d894e00dbd50bce310c",
+    "outputs/profile_pruned_official.json": "0e11fab4ec5b20ebe947b150763df8db205ccc26b301a8911bbccc3122b6d2ca",
+    "outputs/pruning_comparison/public_outputs.json": "a374225430bb0a46c7e00e5481e284a6a271f33e100ef0b500dd93e67bc7b96d",
+    "outputs/pruning_comparison/public_outputs_motion.json": "09a2f2f368075bb8a69a50a87a32ca181dc89254fdf916eb2379c6a554da7a43",
+    "outputs/validation_pruned_motion/validation.json": "10fa7939f180e73971b2f94031b169eca9ee35539ee79baf0d214389d95fb253",
+    "reports/tests_release.xml": "ec971739dd671075265a349a597bb4700a5325c1e402e7381c7f9195b14cad85"
+  }
+}

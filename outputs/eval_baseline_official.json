@@ -1,0 +1,51 @@
+{
+  "experiment_name": "baseline_30000",
+  "method_name": "splatad",
+  "checkpoint": "C:\\codex\\outputs\\training\\baseline_30000\\splatad\\2026-09-27_053445_795104Z\\nerfstudio_models\\step-000029999.ckpt",
+  "checkpoint_step": 29999,
+  "source": "official pipeline get_average_eval_image_metrics",
+  "results": {
+    "median_depth_median_l2": 0.0024301724042743444,
+    "median_depth_median_l2_std": 0.0007505245739594102,
+    "lpips": 0.21773694455623627,
+    "lpips_std": 0.042736928910017014,
+    "ssim": 0.783306896686554,
+    "ssim_std": 0.052893947809934616,
+    "median_depth_mean_rel_l2": 0.01497750636190176,
+    "median_depth_mean_rel_l2_std": 0.008120478130877018,
+    "ray_drop_accuracy": 0.9825926423072815,
+    "ray_drop_accuracy_std": 0.004969317931681871,
+    "median_chamfer_distance": 0.5084987282752991,
+    "median_chamfer_distance_std": 0.3099527359008789,
+    "depth_mean_rel_l2": 0.009039614349603653,
+    "depth_mean_rel_l2_std": 0.005986757110804319,
+    "depth_median_l2": 0.001612198888324201,
+    "depth_median_l2_std": 0.0005147947231307626,
+    "intensity_rmse": 0.05658213794231415,
+    "intensity_rmse_std": 0.0032393268775194883,
+    "chamfer_distance": 0.39105224609375,
+    "chamfer_distance_std": 0.10709913820028305,
+    "num_lidar_rays_per_sec": 1124308.25,
+    "num_lidar_rays_per_sec_std": 339106.78125,
+    "fps": 24.588274002075195,
+    "fps_std": 3.127917528152466,
+    "psnr": 25.196256637573242,
+    "psnr_std": 2.0615108013153076,
+    "num_camera_rays_per_sec": 48811980.0,
+    "num_camera_rays_per_sec_std": 6644582.0
+  },
+  "fid_requested": false,
+  "evaluation_seed": 42,
+  "timing_note": "Pipeline timing fields are informational; use the synchronized profile command for performance comparisons.",
+  "metric_notes": {
+    "depth_median_l2": "median squared range residual (m^2), not metres",
+    "chamfer_distance": "official sum of both directed squared-distance sums divided by GT point count; distinct from the NPZ evaluator's sum of directed means"
+  },
+  "evaluation_scope": {
+    "camera_images": 240,
+    "lidar_sweeps": 40,
+    "sequence": "028",
+    "dataset_end_fraction": 1.0,
+    "train_split_fraction": 0.5
+  }
+}

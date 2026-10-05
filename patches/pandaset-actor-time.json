@@ -1,0 +1,11 @@
+{
+  "name": "pandaset-actor-time",
+  "base_commit": "8ba9b5116b8a2822a80c64f63a4ae64c5871aa68",
+  "relative_path": "nerfstudio/data/dataparsers/pandaset_dataparser.py",
+  "patch_file": "pandaset-actor-time.patch",
+  "original_sha256": "dd27910e865054027ad959b72e78d668072390be055a84455cb41b6a6152f4bb",
+  "patched_sha256": "9595cee03d1cd3d0087ab632b5ce158cc5d8c890196d59ca6d4826d81b0bc82f",
+  "patch_sha256": "6cbaacf33bd4dee8e73b653641fd68a5c888cabb2ebcf1c6e1d588c5d5d8955b",
+  "scope": "Pandar64 bbox return median capturetime; camera-derived calibrated fallback with native -y scan phase; per-frame UUID diagnostics",
+  "diagnostics_time_basis": "absolute dataset seconds (float64); actor trajectory normalization happens downstream"
+}

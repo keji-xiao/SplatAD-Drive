@@ -1,0 +1,2509 @@
+{
+  "config": "C:\\codex\\outputs\\pruned_baseline_alpha001\\config.yml",
+  "kind": "real_official_checkpoint_inference",
+  "split": "train",
+  "status": "NUMERIC_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED",
+  "paper_metrics_claimed": false,
+  "samples": [
+    {
+      "camera_index": 39,
+      "baseline": {
+        "camera": {
+          "rgb": {
+            "shape": [
+              1080,
+              1920,
+              3
+            ],
+            "finite": true,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "depth": {
+            "shape": [
+              1080,
+              1920
+            ],
+            "finite": true,
+            "min": 5.969952583312988,
+            "max": 3235.562744140625
+          },
+          "alpha": {
+            "shape": [
+              1080,
+              1920
+            ],
+            "finite": true,
+            "min": 0.9032837152481079,
+            "max": 0.9998999834060669
+          }
+        },
+        "lidar": {
+          "range": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 3.3407554626464844,
+            "max": 174.99864196777344
+          },
+          "intensity": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 0.0011243820190429688,
+            "max": 1.0
+          },
+          "hit_probability": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 0.0,
+            "max": 0.9998927712440491
+          },
+          "ray_drop": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 8.344650268554688e-07,
+            "max": 1.0
+          },
+          "points": {
+            "shape": [
+              64,
+              1800,
+              3
+            ],
+            "finite": true,
+            "min": -162.8394317626953,
+            "max": 174.90536499023438
+          }
+        },
+        "point_return_threshold": 0.5,
+        "returned_point_count": 112505,
+        "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+      },
+      "actor_edit": {
+        "status": "NUMERIC_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED",
+        "actor_id": 0,
+        "original_pose": [
+          [
+            -0.5889114141464233,
+            -0.8081623315811157,
+            0.007549481466412544,
+            14.72956371307373
+          ],
+          [
+            0.8080744743347168,
+            -0.5889590382575989,
+            -0.01195293664932251,
+            108.37944030761719
+          ],
+          [
+            0.014106248505413532,
+            -0.0009386777528561652,
+            0.9999000430107117,
+            -0.8186991810798645
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "target_pose": [
+          [
+            -0.5889114141464233,
+            -0.8081623315811157,
+            0.007549481466412544,
+            15.729400634765625
+          ],
+          [
+            0.8080744743347168,
+            -0.5889590382575989,
+            -0.01195293664932251,
+            108.37486267089844
+          ],
+          [
+            0.014106248505413532,
+            -0.0009386777528561652,
+            0.9999000430107117,
+            -0.8012364506721497
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_metres": 1.0,
+        "removed": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112516,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "translated": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112491,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "restored": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112505,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "remove_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.00022146762057673186,
+              "max_absolute_change": 0.4022912085056305
+            },
+            "depth": {
+              "mean_absolute_change": 0.4115694463253021,
+              "max_absolute_change": 607.4175415039062
+            },
+            "alpha": {
+              "mean_absolute_change": 1.6752219380578026e-05,
+              "max_absolute_change": 0.03274720907211304
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.005454499274492264,
+              "max_absolute_change": 20.816570281982422
+            },
+            "intensity": {
+              "mean_absolute_change": 6.968218804104254e-05,
+              "max_absolute_change": 0.8152008056640625
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.00035536428913474083,
+              "max_absolute_change": 0.9022650718688965
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.0004197510425001383,
+              "max_absolute_change": 0.9735565185546875
+            },
+            "alpha": {
+              "mean_absolute_change": 0.00018419312254991382,
+              "max_absolute_change": 0.46489959955215454
+            },
+            "points": {
+              "mean_absolute_change": 0.0022106121759861708,
+              "max_absolute_change": 20.262245178222656
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.011185644194483757,
+              "max_absolute_change": 30.90020751953125
+            },
+            "median_range": {
+              "mean_absolute_change": 0.00836940947920084,
+              "max_absolute_change": 45.119789123535156
+            }
+          }
+        },
+        "translate_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.00022096237808000296,
+              "max_absolute_change": 0.3908999562263489
+            },
+            "depth": {
+              "mean_absolute_change": 0.29364341497421265,
+              "max_absolute_change": 461.6414794921875
+            },
+            "alpha": {
+              "mean_absolute_change": 1.35789514388307e-05,
+              "max_absolute_change": 0.03202265501022339
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.0024218300823122263,
+              "max_absolute_change": 10.493019104003906
+            },
+            "intensity": {
+              "mean_absolute_change": 0.0001453239528927952,
+              "max_absolute_change": 0.885009765625
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.00020720911561511457,
+              "max_absolute_change": 0.8455705642700195
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.00021439210104290396,
+              "max_absolute_change": 0.96734619140625
+            },
+            "alpha": {
+              "mean_absolute_change": 0.00010542462405283004,
+              "max_absolute_change": 0.4551050662994385
+            },
+            "points": {
+              "mean_absolute_change": 0.0009797217790037394,
+              "max_absolute_change": 10.206241607666016
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.006521063856780529,
+              "max_absolute_change": 30.206974029541016
+            },
+            "median_range": {
+              "mean_absolute_change": 0.0018487354973331094,
+              "max_absolute_change": 20.058643341064453
+            }
+          }
+        },
+        "rotation_degrees": 15.0,
+        "rotated_pose": [
+          [
+            -0.7779898047447205,
+            -0.6281910538673401,
+            0.010385886766016483,
+            14.72956371307373
+          ],
+          [
+            0.6281185150146484,
+            -0.7780585289001465,
+            -0.00959170050919056,
+            108.37944030761719
+          ],
+          [
+            0.014106248505413532,
+            -0.0009386777528561652,
+            0.9999000430107117,
+            -0.8186991810798645
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rotated": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112493,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "rotate_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.0001207062232424505,
+              "max_absolute_change": 0.27577927708625793
+            },
+            "depth": {
+              "mean_absolute_change": 0.21701683104038239,
+              "max_absolute_change": 367.9424133300781
+            },
+            "alpha": {
+              "mean_absolute_change": 1.0193224625254516e-05,
+              "max_absolute_change": 0.029483795166015625
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.001475989818572998,
+              "max_absolute_change": 7.330108642578125
+            },
+            "intensity": {
+              "mean_absolute_change": 0.00015164499927777797,
+              "max_absolute_change": 0.8603515625
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.00010805940837599337,
+              "max_absolute_change": 0.7256197333335876
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.00011222148896194994,
+              "max_absolute_change": 0.96600341796875
+            },
+            "alpha": {
+              "mean_absolute_change": 7.734910468570888e-05,
+              "max_absolute_change": 0.355704128742218
+            },
+            "points": {
+              "mean_absolute_change": 0.0005943911382928491,
+              "max_absolute_change": 7.1297760009765625
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.004644495900720358,
+              "max_absolute_change": 23.037321090698242
+            },
+            "median_range": {
+              "mean_absolute_change": 0.0015912260860204697,
+              "max_absolute_change": 19.590991973876953
+            }
+          }
+        },
+        "restore_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "depth": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "alpha": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "intensity": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "alpha": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "points": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "median_range": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            }
+          }
+        },
+        "restore_max_error": 0.0,
+        "parameter_restoration": true,
+        "note": "Zero image change can mean this actor was outside visible/returned support; it is not a visual editing PASS."
+      },
+      "ego_shift": {
+        "translation_metres": 0.5,
+        "T_shifted_world_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.49991852045059204
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.002286952454596758
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.008731367066502571
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "relative_extrinsic_max_error": 1.4901161193847656e-08,
+        "numeric_checks": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 4.286747455596924,
+              "max": 2957.222900390625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9239187836647034,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 2.912578582763672,
+              "max": 176.83030700683594
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0014324188232421875,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998881220817566
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 1.0311603546142578e-05,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.32318115234375,
+              "max": 176.766845703125
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112440,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "status": "NUMERIC_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED"
+      },
+      "comparison_order": [
+        "gt_rgb_resized",
+        "baseline",
+        "actor_removed",
+        "actor_translated",
+        "actor_rotated",
+        "restored",
+        "ego_shifted"
+      ]
+    },
+    {
+      "camera_index": 39,
+      "baseline": {
+        "camera": {
+          "rgb": {
+            "shape": [
+              1080,
+              1920,
+              3
+            ],
+            "finite": true,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "depth": {
+            "shape": [
+              1080,
+              1920
+            ],
+            "finite": true,
+            "min": 5.969952583312988,
+            "max": 3235.562744140625
+          },
+          "alpha": {
+            "shape": [
+              1080,
+              1920
+            ],
+            "finite": true,
+            "min": 0.9032837152481079,
+            "max": 0.9998999834060669
+          }
+        },
+        "lidar": {
+          "range": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 3.3407554626464844,
+            "max": 174.99864196777344
+          },
+          "intensity": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 0.0011243820190429688,
+            "max": 1.0
+          },
+          "hit_probability": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 0.0,
+            "max": 0.9998927712440491
+          },
+          "ray_drop": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 8.344650268554688e-07,
+            "max": 1.0
+          },
+          "points": {
+            "shape": [
+              64,
+              1800,
+              3
+            ],
+            "finite": true,
+            "min": -162.8394317626953,
+            "max": 174.90536499023438
+          }
+        },
+        "point_return_threshold": 0.5,
+        "returned_point_count": 112505,
+        "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+      },
+      "actor_edit": {
+        "status": "NUMERIC_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED",
+        "actor_id": 1,
+        "original_pose": [
+          [
+            -0.6204918026924133,
+            -0.7831686735153198,
+            -0.04045766964554787,
+            3.89831805229187
+          ],
+          [
+            0.7828027009963989,
+            -0.6216437220573425,
+            0.027912544086575508,
+            104.2623291015625
+          ],
+          [
+            -0.04701048508286476,
+            -0.01435086876153946,
+            0.9987913966178894,
+            -1.8827857971191406
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "target_pose": [
+          [
+            -0.6204918026924133,
+            -0.7831686735153198,
+            -0.04045766964554787,
+            4.898155212402344
+          ],
+          [
+            0.7828027009963989,
+            -0.6216437220573425,
+            0.027912544086575508,
+            104.25775146484375
+          ],
+          [
+            -0.04701048508286476,
+            -0.01435086876153946,
+            0.9987913966178894,
+            -1.8653230667114258
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_metres": 1.0,
+        "removed": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112531,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "translated": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112516,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "restored": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112505,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "remove_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.00027658214094117284,
+              "max_absolute_change": 0.629562497138977
+            },
+            "depth": {
+              "mean_absolute_change": 0.22750253975391388,
+              "max_absolute_change": 640.5255126953125
+            },
+            "alpha": {
+              "mean_absolute_change": 2.752338332356885e-06,
+              "max_absolute_change": 0.010682404041290283
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.008004660718142986,
+              "max_absolute_change": 18.4937744140625
+            },
+            "intensity": {
+              "mean_absolute_change": 8.840097871143371e-05,
+              "max_absolute_change": 0.86322021484375
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.000354815274477005,
+              "max_absolute_change": 0.9566100835800171
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.0004105010302737355,
+              "max_absolute_change": 0.9885711669921875
+            },
+            "alpha": {
+              "mean_absolute_change": 9.261671948479488e-05,
+              "max_absolute_change": 0.3209708333015442
+            },
+            "points": {
+              "mean_absolute_change": 0.002978304401040077,
+              "max_absolute_change": 18.39398956298828
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.00705668656155467,
+              "max_absolute_change": 15.432588577270508
+            },
+            "median_range": {
+              "mean_absolute_change": 0.013046210631728172,
+              "max_absolute_change": 66.92264556884766
+            }
+          }
+        },
+        "translate_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.0002816679188981652,
+              "max_absolute_change": 0.631102979183197
+            },
+            "depth": {
+              "mean_absolute_change": 0.16895265877246857,
+              "max_absolute_change": 660.46630859375
+            },
+            "alpha": {
+              "mean_absolute_change": 1.998693278437713e-06,
+              "max_absolute_change": 0.012682497501373291
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.004591231234371662,
+              "max_absolute_change": 12.44757080078125
+            },
+            "intensity": {
+              "mean_absolute_change": 9.389340993948281e-05,
+              "max_absolute_change": 0.90167236328125
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.0002849110751412809,
+              "max_absolute_change": 0.9569773077964783
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.0003103338531218469,
+              "max_absolute_change": 0.9622650146484375
+            },
+            "alpha": {
+              "mean_absolute_change": 4.703748709289357e-05,
+              "max_absolute_change": 0.19328123331069946
+            },
+            "points": {
+              "mean_absolute_change": 0.0017050880705937743,
+              "max_absolute_change": 12.40093994140625
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.004400939680635929,
+              "max_absolute_change": 12.035125732421875
+            },
+            "median_range": {
+              "mean_absolute_change": 0.007600060664117336,
+              "max_absolute_change": 66.92264556884766
+            }
+          }
+        },
+        "rotation_degrees": 15.0,
+        "rotated_pose": [
+          [
+            -0.8019532561302185,
+            -0.5955896377563477,
+            -0.0463034063577652,
+            3.89831805229187
+          ],
+          [
+            0.5955342054367065,
+            -0.8031606674194336,
+            0.016490232199430466,
+            104.2623291015625
+          ],
+          [
+            -0.04701048508286476,
+            -0.01435086876153946,
+            0.9987913966178894,
+            -1.8827857971191406
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rotated": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112507,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "rotate_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.00016445400251541287,
+              "max_absolute_change": 0.6556211709976196
+            },
+            "depth": {
+              "mean_absolute_change": 0.07957801222801208,
+              "max_absolute_change": 328.5491943359375
+            },
+            "alpha": {
+              "mean_absolute_change": 1.0374618568675942e-06,
+              "max_absolute_change": 0.008747577667236328
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.0015060637379065156,
+              "max_absolute_change": 5.251365661621094
+            },
+            "intensity": {
+              "mean_absolute_change": 5.789485294371843e-05,
+              "max_absolute_change": 0.6533203125
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.00010811098763952032,
+              "max_absolute_change": 0.632147490978241
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.00011560403800103813,
+              "max_absolute_change": 0.70166015625
+            },
+            "alpha": {
+              "mean_absolute_change": 2.0506722648860887e-05,
+              "max_absolute_change": 0.10457438230514526
+            },
+            "points": {
+              "mean_absolute_change": 0.0005572863155975938,
+              "max_absolute_change": 5.219841003417969
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.0013732784427702427,
+              "max_absolute_change": 4.374656677246094
+            },
+            "median_range": {
+              "mean_absolute_change": 0.0029834790620952845,
+              "max_absolute_change": 36.604400634765625
+            }
+          }
+        },
+        "restore_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "depth": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "alpha": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "intensity": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "alpha": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "points": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "median_range": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            }
+          }
+        },
+        "restore_max_error": 0.0,
+        "parameter_restoration": true,
+        "note": "Zero image change can mean this actor was outside visible/returned support; it is not a visual editing PASS."
+      },
+      "ego_shift": {
+        "translation_metres": 0.5,
+        "T_shifted_world_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.49991852045059204
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.002286952454596758
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.008731367066502571
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "relative_extrinsic_max_error": 1.4901161193847656e-08,
+        "numeric_checks": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 4.286747455596924,
+              "max": 2957.222900390625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9239187836647034,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 2.912578582763672,
+              "max": 176.83030700683594
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0014324188232421875,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998881220817566
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 1.0311603546142578e-05,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.32318115234375,
+              "max": 176.766845703125
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112440,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "status": "NUMERIC_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED"
+      },
+      "comparison_order": [
+        "gt_rgb_resized",
+        "baseline",
+        "actor_removed",
+        "actor_translated",
+        "actor_rotated",
+        "restored",
+        "ego_shifted"
+      ]
+    },
+    {
+      "camera_index": 39,
+      "baseline": {
+        "camera": {
+          "rgb": {
+            "shape": [
+              1080,
+              1920,
+              3
+            ],
+            "finite": true,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "depth": {
+            "shape": [
+              1080,
+              1920
+            ],
+            "finite": true,
+            "min": 5.969952583312988,
+            "max": 3235.562744140625
+          },
+          "alpha": {
+            "shape": [
+              1080,
+              1920
+            ],
+            "finite": true,
+            "min": 0.9032837152481079,
+            "max": 0.9998999834060669
+          }
+        },
+        "lidar": {
+          "range": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 3.3407554626464844,
+            "max": 174.99864196777344
+          },
+          "intensity": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 0.0011243820190429688,
+            "max": 1.0
+          },
+          "hit_probability": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 0.0,
+            "max": 0.9998927712440491
+          },
+          "ray_drop": {
+            "shape": [
+              64,
+              1800
+            ],
+            "finite": true,
+            "min": 8.344650268554688e-07,
+            "max": 1.0
+          },
+          "points": {
+            "shape": [
+              64,
+              1800,
+              3
+            ],
+            "finite": true,
+            "min": -162.8394317626953,
+            "max": 174.90536499023438
+          }
+        },
+        "point_return_threshold": 0.5,
+        "returned_point_count": 112505,
+        "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+      },
+      "actor_edit": {
+        "status": "NUMERIC_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED",
+        "actor_id": 2,
+        "original_pose": [
+          [
+            0.5370135307312012,
+            0.8434857726097107,
+            0.012178940698504448,
+            -17.485410690307617
+          ],
+          [
+            -0.8434599041938782,
+            0.5366480350494385,
+            0.024172145873308182,
+            76.24172973632812
+          ],
+          [
+            0.013853056356310844,
+            -0.023253217339515686,
+            0.9996336698532104,
+            -1.3185011148452759
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "target_pose": [
+          [
+            0.5370135307312012,
+            0.8434857726097107,
+            0.012178940698504448,
+            -16.485572814941406
+          ],
+          [
+            -0.8434599041938782,
+            0.5366480350494385,
+            0.024172145873308182,
+            76.23715209960938
+          ],
+          [
+            0.013853056356310844,
+            -0.023253217339515686,
+            0.9996336698532104,
+            -1.301038384437561
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_metres": 1.0,
+        "removed": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112454,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "translated": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112521,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "restored": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112505,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "remove_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.0004155983042437583,
+              "max_absolute_change": 0.5659027099609375
+            },
+            "depth": {
+              "mean_absolute_change": 0.36342477798461914,
+              "max_absolute_change": 548.8709106445312
+            },
+            "alpha": {
+              "mean_absolute_change": 4.9984987526841e-06,
+              "max_absolute_change": 0.03064638376235962
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.015286511741578579,
+              "max_absolute_change": 35.89320373535156
+            },
+            "intensity": {
+              "mean_absolute_change": 8.58625426189974e-05,
+              "max_absolute_change": 0.79925537109375
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.0003789371985476464,
+              "max_absolute_change": 0.8991826772689819
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.0001534873736090958,
+              "max_absolute_change": 0.916015625
+            },
+            "alpha": {
+              "mean_absolute_change": 0.0002815927437040955,
+              "max_absolute_change": 0.5197513103485107
+            },
+            "points": {
+              "mean_absolute_change": 0.0069181229919195175,
+              "max_absolute_change": 32.90889358520508
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.006605374161154032,
+              "max_absolute_change": 18.587413787841797
+            },
+            "median_range": {
+              "mean_absolute_change": 0.024164000526070595,
+              "max_absolute_change": 48.08761215209961
+            }
+          }
+        },
+        "translate_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.0006548859528265893,
+              "max_absolute_change": 0.6440932154655457
+            },
+            "depth": {
+              "mean_absolute_change": 0.5880419015884399,
+              "max_absolute_change": 525.2792358398438
+            },
+            "alpha": {
+              "mean_absolute_change": 1.3761404261458665e-05,
+              "max_absolute_change": 0.03064638376235962
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.017814258113503456,
+              "max_absolute_change": 34.63543701171875
+            },
+            "intensity": {
+              "mean_absolute_change": 0.00016046922246459872,
+              "max_absolute_change": 0.8214111328125
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.000412757188314572,
+              "max_absolute_change": 0.9482786655426025
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.00017106339510064572,
+              "max_absolute_change": 0.983123779296875
+            },
+            "alpha": {
+              "mean_absolute_change": 0.0002990438952110708,
+              "max_absolute_change": 0.44915300607681274
+            },
+            "points": {
+              "mean_absolute_change": 0.008026141673326492,
+              "max_absolute_change": 31.75570297241211
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.012476233765482903,
+              "max_absolute_change": 19.545413970947266
+            },
+            "median_range": {
+              "mean_absolute_change": 0.02975429780781269,
+              "max_absolute_change": 47.12400817871094
+            }
+          }
+        },
+        "rotation_degrees": 15.0,
+        "rotated_pose": [
+          [
+            0.7370187044143677,
+            0.6758499145507812,
+            0.005507742054760456,
+            -17.485410690307617
+          ],
+          [
+            -0.6757303476333618,
+            0.7366723418235779,
+            0.02650064043700695,
+            76.24172973632812
+          ],
+          [
+            0.013853056356310844,
+            -0.023253217339515686,
+            0.9996336698532104,
+            -1.3185011148452759
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rotated": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 5.969952583312988,
+              "max": 3235.562744140625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9032837152481079,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 3.3407554626464844,
+              "max": 174.99864196777344
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0011243820190429688,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998927712440491
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 8.344650268554688e-07,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.8394317626953,
+              "max": 174.90536499023438
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112500,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "rotate_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.0001770065864548087,
+              "max_absolute_change": 0.426247239112854
+            },
+            "depth": {
+              "mean_absolute_change": 0.1290981024503708,
+              "max_absolute_change": 319.748046875
+            },
+            "alpha": {
+              "mean_absolute_change": 2.5656988782429835e-06,
+              "max_absolute_change": 0.031119704246520996
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.001902307732962072,
+              "max_absolute_change": 5.253063201904297
+            },
+            "intensity": {
+              "mean_absolute_change": 1.6571349988225847e-05,
+              "max_absolute_change": 0.203857421875
+            },
+            "hit_probability": {
+              "mean_absolute_change": 6.912625394761562e-05,
+              "max_absolute_change": 0.29706400632858276
+            },
+            "ray_drop": {
+              "mean_absolute_change": 1.6980535292532295e-05,
+              "max_absolute_change": 0.3056640625
+            },
+            "alpha": {
+              "mean_absolute_change": 6.135167495813221e-05,
+              "max_absolute_change": 0.17337369918823242
+            },
+            "points": {
+              "mean_absolute_change": 0.000862152490299195,
+              "max_absolute_change": 4.818000793457031
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.0017999688861891627,
+              "max_absolute_change": 5.673261642456055
+            },
+            "median_range": {
+              "mean_absolute_change": 0.004556694999337196,
+              "max_absolute_change": 37.32346725463867
+            }
+          }
+        },
+        "restore_change": {
+          "camera": {
+            "rgb": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "depth": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "alpha": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            }
+          },
+          "lidar": {
+            "range": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "intensity": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "hit_probability": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "ray_drop": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "alpha": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "points": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "depth_sum": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            },
+            "median_range": {
+              "mean_absolute_change": 0.0,
+              "max_absolute_change": 0.0
+            }
+          }
+        },
+        "restore_max_error": 0.0,
+        "parameter_restoration": true,
+        "note": "Zero image change can mean this actor was outside visible/returned support; it is not a visual editing PASS."
+      },
+      "ego_shift": {
+        "translation_metres": 0.5,
+        "T_shifted_world_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.49991852045059204
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.002286952454596758
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.008731367066502571
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "relative_extrinsic_max_error": 1.4901161193847656e-08,
+        "numeric_checks": {
+          "camera": {
+            "rgb": {
+              "shape": [
+                1080,
+                1920,
+                3
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 1.0
+            },
+            "depth": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 4.286747455596924,
+              "max": 2957.222900390625
+            },
+            "alpha": {
+              "shape": [
+                1080,
+                1920
+              ],
+              "finite": true,
+              "min": 0.9239187836647034,
+              "max": 0.9998999834060669
+            }
+          },
+          "lidar": {
+            "range": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 2.912578582763672,
+              "max": 176.83030700683594
+            },
+            "intensity": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0014324188232421875,
+              "max": 1.0
+            },
+            "hit_probability": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 0.0,
+              "max": 0.9998881220817566
+            },
+            "ray_drop": {
+              "shape": [
+                64,
+                1800
+              ],
+              "finite": true,
+              "min": 1.0311603546142578e-05,
+              "max": 1.0
+            },
+            "points": {
+              "shape": [
+                64,
+                1800,
+                3
+              ],
+              "finite": true,
+              "min": -162.32318115234375,
+              "max": 176.766845703125
+            }
+          },
+          "point_return_threshold": 0.5,
+          "returned_point_count": 112440,
+          "overlay_scope": "LiDAR sensor translation compensated per ray; camera nominal center pose; no angular or actor cross-time compensation"
+        },
+        "status": "NUMERIC_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED"
+      },
+      "comparison_order": [
+        "gt_rgb_resized",
+        "baseline",
+        "actor_removed",
+        "actor_translated",
+        "actor_rotated",
+        "restored",
+        "ego_shifted"
+      ]
+    }
+  ],
+  "checkpoint_path": "C:\\codex\\outputs\\pruned_baseline_alpha001\\nerfstudio_models\\step-000029999.ckpt",
+  "checkpoint_step": 29999,
+  "gaussian_count": 3672621,
+  "actor_count": 3,
+  "sensor_idx_to_name": {
+    "0": "front",
+    "1": "front_left",
+    "2": "front_right",
+    "3": "back",
+    "4": "left",
+    "5": "right",
+    "6": "Pandar64"
+  },
+  "numeric_checks_passed": true,
+  "visual_quality": "UNREVIEWED",
+  "note": "Numeric checks validate execution and editing mechanics; reconstruction quality requires separate held-out metrics and visual review."
+}

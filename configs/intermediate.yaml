@@ -1,0 +1,9 @@
+name: intermediate_3000
+sequence: '028'
+iterations: 3000
+seed: 42
+cameras: [front, front_left, front_right, back, left, right]
+dataset_end_fraction: 1.0
+data: data/pandaset
+output_dir: outputs/training
+vis: tensorboard

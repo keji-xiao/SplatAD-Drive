@@ -1,0 +1,10 @@
+==WARNING== Could not deploy stock section files to "C:\Users\qzy_2\Documents/NVIDIA Nsight Compute/2022.1.0/Sections".
+Set the HOME environment variable to a writable directory.
+==WARNING== Using "C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.1.0\target\windows-desktop-win7-x64\..\..\sections" instead.
+==WARNING== See https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#faq.
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 9176 (C:\anconda\envs\3dgs\python.exe)
+==ERROR== ERR_NVGPUCTRPERM - The user does not have permission to access NVIDIA GPU Performance Counters on the target device 0. For instructions on enabling permissions and to get more information see https://developer.nvidia.com/ERR_NVGPUCTRPERM
+==PROF== Disconnected from process 9176
+==WARNING== No kernels were profiled.

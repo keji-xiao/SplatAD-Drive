@@ -1,0 +1,5 @@
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+PASS 240 40 20

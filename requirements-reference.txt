@@ -1,0 +1,7 @@
+# Minimal environment used by the local reference workflow (CUDA Torch installed separately).
+numpy==1.24.4
+Pillow>=9
+PyYAML==6.0.3
+pytest>=7
+# Optional exact Chamfer acceleration; a bounded-memory Torch fallback exists.
+scipy>=1.10

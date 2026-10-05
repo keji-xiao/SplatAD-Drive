@@ -1,0 +1,10 @@
+Executed 2026-09-26 in C:\codex:
+.venv-gpu\Scripts\python.exe -m pytest tests/test_lidar_renderer.py tests/test_upstream_contract.py -q
+
+Captured process output:
+C:\anconda\envs\3dgs\lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+..........................                                               [100%]
+26 passed in 3.35s
+
+Process exit code: 0

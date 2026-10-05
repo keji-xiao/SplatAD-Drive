@@ -1,0 +1,6 @@
+{
+  "audit_sha256": "REPLACE_WITH_SHA256_OF_REVIEWED_audit.json",
+  "approved": false,
+  "reviewer": "",
+  "notes": "Inspect at least 20 overlays: road, vehicles, buildings; inspect sensor and actor trajectories. Record actual findings, then approve."
+}

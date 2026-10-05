@@ -1,0 +1,47 @@
+--- a/nerfstudio/data/dataparsers/pandaset_dataparser.py
++++ b/nerfstudio/data/dataparsers/pandaset_dataparser.py
+@@ -325,6 +325,7 @@
+         if self.config.include_deformable_actors:
+             allowed_classes += ALLOWED_DEFORMABLE_CLASSES
+         cuboids = []
++        self.actor_timing_diagnostics = []  # SplatAD-Drive audited capture-time provenance.
+         for i in range(PANDASET_SEQ_LEN):
+             curr_cuboids = self.sequence.cuboids[i]
+             # Remove invalid cuboids
+@@ -362,13 +363,29 @@
+             )  # uuid of sibling cuboid, i.e., if sensor_id != -1
+ 
+             if self.config.correct_cuboid_time:
+-                # correct the cuboid time to match the actual time of observation, not the end of the lidar sweep
+-                lidpose = _pandaset_pose_to_matrix(self.sequence.lidar.poses[i])
+-                posinlid = pos @ lidpose[:3, :3].T + lidpose[:3, 3]
+-                angle = np.arctan2(posinlid[:, 0], posinlid[:, 1]) - np.pi / 2
+-                angle = (angle + np.pi) % (2 * np.pi) - np.pi
+-                timediff = angle / (2 * np.pi) * np.diff(self.sequence.lidar.timestamps).mean()
+-                cuboid_times = self.sequence.camera["front_camera"].timestamps[i] + timediff
++                # SplatAD-Drive patch: measured Pandar64 return times, calibrated fallback.
++                from splatad_drive.data.actor_timing import estimate_actor_capture_times
++
++                front_camera = self.sequence.camera["front_camera"]
++                front_cam2w = _pandaset_pose_to_matrix(front_camera.poses[i])
++                calibration = self.extrinsics["front_camera"]["extrinsic"]["transform"]
++                lidar2front = _pandaset_pose_to_matrix({
++                    "heading": calibration["rotation"], "position": calibration["translation"]
++                })
++                # Same pose construction as _get_lidars; native sensor front is -y.
++                lidar2world = front_cam2w @ lidar2front
++                raw_points = self.sequence.lidar[i].loc[:, ["x", "y", "z", "i", "t", "d"]].to_numpy(
++                    dtype=np.float64, copy=True
++                )
++                cuboid_times, timing_diagnostics = estimate_actor_capture_times(
++                    pos, rot, dims, raw_points, lidar2world,
++                    float(front_camera.timestamps[i]),
++                    float(np.diff(np.asarray(self.sequence.lidar.timestamps, dtype=np.float64)).mean()),
++                )
++                self.actor_timing_diagnostics.extend(
++                    dict(raw_frame=int(i), uuid=str(uuid[j]), sensor_id=int(sensor_id[j]), **item)
++                    for j, item in enumerate(timing_diagnostics) if sensor_id[j] != 1
++                )
+             else:
+                 # assume the cuboid time matches the sequence time
+                 cuboid_times = np.repeat(self.sequence.camera["front_camera"].timestamps[i], len(uuid))

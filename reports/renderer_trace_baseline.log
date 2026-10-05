@@ -1,0 +1,24 @@
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+py123d dataparser has missing dependencies; install py123d to enable py123d-data.
+Waymo dataparser has missing dependencies, please following installation instructions in README.md
+[21:38:27] Painting lidar points                                                    full_images_lidar_datamanager.py:121
+           Caching / undistorting train images                                            full_images_datamanager.py:240
+c:\codex\third_party\neurad-studio\nerfstudio\data\datamanagers\full_images_datamanager.py:214: UserWarning: The size of image (1920, 1080) loaded does not match the camera parameters (1920, 820).The image will be cropped after distortion correction.
+  warnings.warn(
+
+[21:38:29] Caching train lidars                                                     full_images_lidar_datamanager.py:298
+
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from 
+C:\codex\outputs\training\baseline_30000\splatad\2026-09-27_053445_795104Z\nerfstudio_models\step-000029999.ckpt
+c:\codex\third_party\neurad-studio\nerfstudio\models\splatad.py:860: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\Cross.cpp:66.)
+  angle_vel_in_box = torch.cross(
+C:\anconda\envs\3dgs\lib\site-packages\torch\utils\cpp_extension.py:446: UserWarning: Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+  warnings.warn(f'Error checking compiler version for {compiler}: {error}')
+C:\anconda\envs\3dgs\lib\site-packages\torch\utils\cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+C:\codex\outputs\renderer_trace_baseline\operators.txt

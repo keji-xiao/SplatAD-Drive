@@ -1,0 +1,564 @@
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+py123d dataparser has missing dependencies; install py123d to enable py123d-data.
+Waymo dataparser has missing dependencies, please following installation instructions in README.md
+Training evidence directory: C:\codex\outputs\training\smoke_300\splatad\2026-09-23_023519_714812Z
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+c:\codex\third_party\neurad-studio\nerfstudio\utils\misc.py:185: RuntimeWarning: Windows does not yet support torch.compile and the performance will be affected.
+  warnings.warn(
+py123d dataparser has missing dependencies; install py123d to enable py123d-data.
+Waymo dataparser has missing dependencies, please following installation instructions in README.md
+c:\codex\third_party\neurad-studio\nerfstudio\field_components\activations.py:32: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float32)
+c:\codex\third_party\neurad-studio\nerfstudio\field_components\activations.py:39: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, g):
+���������������������������������������������������������������������������������������������������������������� Config ����������������������������������������������������������������������������������������������������������������
+TrainerConfig(
+    _target=<class 'nerfstudio.engine.trainer.Trainer'>,
+    output_dir=WindowsPath('C:/codex/outputs/training'),
+    method_name='splatad',
+    experiment_name='smoke_300',
+    project_name='nerfstudio-project',
+    timestamp='2026-09-23_023519_714812Z',
+    machine=MachineConfig(seed=42, num_devices=1, num_machines=1, machine_rank=0, dist_url='auto', device_type='cuda'),
+    logging=LoggingConfig(
+        relative_log_dir=WindowsPath('.'),
+        steps_per_log=10,
+        max_buffer_size=20,
+        local_writer=LocalWriterConfig(
+            _target=<class 'nerfstudio.utils.writer.LocalWriter'>,
+            enable=True,
+            stats_to_track=(
+                <EventName.ITER_TRAIN_TIME: 'Train Iter (time)'>,
+                <EventName.TRAIN_RAYS_PER_SEC: 'Train Rays / Sec'>,
+                <EventName.CURR_TEST_PSNR: 'Test PSNR'>,
+                <EventName.VIS_RAYS_PER_SEC: 'Vis Rays / Sec'>,
+                <EventName.TEST_RAYS_PER_SEC: 'Test Rays / Sec'>,
+                <EventName.ETA: 'ETA (time)'>
+            ),
+            max_log_size=10
+        ),
+        profiler='basic'
+    ),
+    viewer=ViewerConfig(
+        relative_log_filename='viewer_log_filename.txt',
+        websocket_port=None,
+        websocket_port_default=7007,
+        websocket_host='0.0.0.0',
+        num_rays_per_chunk=32768,
+        max_num_display_images=512,
+        quit_on_train_completion=False,
+        image_format='jpeg',
+        jpeg_quality=75,
+        make_share_url=False,
+        camera_frustum_scale=0.1,
+        default_composite_depth=True,
+        max_points_per_cloud=2000
+    ),
+    pipeline=SplatADPipelineConfig(
+        _target=<class 'nerfstudio.pipelines.splatad_pipeline.SplatADPipeline'>,
+        datamanager=FullImageLidarDatamanagerConfig(
+            _target=<class 'nerfstudio.data.datamanagers.full_images_lidar_datamanager.FullImageLidarDatamanager'>,
+            data=None,
+            masks_on_gpu=False,
+            images_on_gpu=False,
+            dataparser=PandaSetDataParserConfig(
+                _target=<class 'nerfstudio.data.dataparsers.pandaset_dataparser.PandaSet'>,
+                data=WindowsPath('C:/codex/data/pandaset'),
+                sequence='028',
+                train_split_fraction=0.5,
+                train_eval_split_type=<SplitTypes.LINSPACE: 'linspace'>,
+                max_eval_frames=None,
+                dataset_start_fraction=0.0,
+                dataset_end_fraction=0.2,
+                cameras=('front',),
+                lidars=('Pandar64',),
+                min_lidar_dist=(1.0, 2.0, 2.0),
+                radars=(),
+                load_cuboids=True,
+                include_deformable_actors=False,
+                annotation_interval=0.1,
+                trajectory_extrapolation_length=1.0,
+                rolling_shutter_time=0.03,
+                time_to_center_pixel=-0.01,
+                allow_per_point_times=True,
+                add_missing_points=True,
+                lidar_elevation_mapping={
+                    'Pandar64': {
+                        0: 14.882,
+                        1: 11.032,
+                        2: 8.059,
+                        3: 5.057,
+                        4: 3.04,
+                        5: 2.028,
+                        6: 1.86,
+                        7: 1.688,
+                        8: 1.522,
+                        9: 1.351,
+                        10: 1.184,
+                        11: 1.013,
+                        12: 0.846,
+                        13: 0.675,
+                        14: 0.508,
+                        15: 0.337,
+                        16: 0.169,
+                        17: 0.0,
+                        18: -0.169,
+                        19: -0.337,
+                        20: -0.508,
+                        21: -0.675,
+                        22: -0.846,
+                        23: -1.013,
+                        24: -1.184,
+                        25: -1.351,
+                        26: -1.522,
+                        27: -1.688,
+                        28: -1.86,
+                        29: -2.028,
+                        30: -2.198,
+                        31: -2.365,
+                        32: -2.536,
+                        33: -2.7,
+                        34: -2.873,
+                        35: -3.04,
+                        36: -3.21,
+                        37: -3.375,
+                        38: -3.548,
+                        39: -3.712,
+                        40: -3.884,
+                        41: -4.05,
+                        42: -4.221,
+                        43: -4.385,
+                        44: -4.558,
+                        45: -4.72,
+                        46: -4.892,
+                        47: -5.057,
+                        48: -5.229,
+                        49: -5.391,
+                        50: -5.565,
+                        51: -5.726,
+                        52: -5.898,
+                        53: -6.061,
+                        54: -7.063,
+                        55: -8.059,
+                        56: -9.06,
+                        57: -9.885,
+                        58: -11.032,
+                        59: -12.006,
+                        60: -12.974,
+                        61: -13.93,
+                        62: -18.889,
+                        63: -24.897
+                    }
+                },
+                skip_elevation_channels={'Pandar64': (62, 63)},
+                lidar_azimuth_resolution={'Pandar64': 0.2},
+                correct_cuboid_time=True
+            ),
+            camera_res_scale_factor=1.0,
+            eval_num_images_to_sample_from=-1,
+            eval_num_times_to_repeat_images=-1,
+            eval_image_indices=(0,),
+            cache_images='gpu',
+            cache_images_type='uint8',
+            max_thread_workers=None,
+            train_cameras_sampling_strategy='random',
+            train_cameras_sampling_seed=42,
+            fps_reset_every=100,
+            eval_num_lidars_to_sample_from=-1,
+            eval_num_times_to_repeat_lidars=-1,
+            eval_lidar_indices=(0,),
+            cache_lidars='gpu',
+            downsample_factor=1,
+            paint_points=True,
+            paint_points_topk=2,
+            train_lidar_only=False,
+            train_image_only=False
+        ),
+        model=SplatADModelConfig(
+            _target=<class 'nerfstudio.models.splatad.SplatADModel'>,
+            enable_collider=True,
+            collider_params={'near_plane': 2.0, 'far_plane': 6.0},
+            loss_coefficients={'rgb_loss_coarse': 1.0, 'rgb_loss_fine': 1.0},
+            eval_num_rays_per_chunk=4096,
+            prompt=None,
+            rgb_upsample_factor=1,
+            dynamic_actors=DynamicActorsConfig(
+                _target=<class 'nerfstudio.model_components.dynamic_actors.DynamicActors'>,
+                optimize_trajectories=True,
+                actor_bbox_padding=(0.25, 0.25, 0.1)
+            ),
+            camera_optimizer=CameraOptimizerConfig(
+                _target=<class 'nerfstudio.cameras.camera_optimizers.CameraOptimizer'>,
+                mode='off',
+                trans_l2_penalty=0.01,
+                rot_l2_penalty=0.001,
+                optimizer=None,
+                scheduler=None
+            ),
+            use_camopt_in_eval=False,
+            warmup_length=500,
+            refine_every=100,
+            resolution_schedule=3000,
+            background_color='random',
+            num_downscales=2,
+            strategy='mcmc',
+            cull_alpha_thresh=0.1,
+            cull_scale_thresh=500.0,
+            continue_cull_post_densification=True,
+            reset_alpha_every=30,
+            densify_grad_thresh=0.0006,
+            densify_size_thresh=0.5,
+            n_split_samples=2,
+            cull_screen_size=0.15,
+            split_screen_size=0.05,
+            stop_screen_size_at=4000,
+            use_absgrad=True,
+            mcmc_cap_max=5000000,
+            mcmc_noise_lr=500000.0,
+            mcmc_min_opacity=0.005,
+            verbose=True,
+            max_steps=30001,
+            init_opacities=0.5,
+            init_scale=0.2,
+            max_num_seed_points=2000000,
+            ssim_lambda=0.2,
+            stop_split_at=15000,
+            mcmc_scale_reg_lambda=0.001,
+            mcmc_opacity_reg_lambda=0.005,
+            output_depth_during_training=False,
+            rasterize_mode='antialiased',
+            camera_velocity_optimizer=CameraVelocityOptimizerConfig(
+                _target=<class 'nerfstudio.cameras.camera_optimizers.CameraVelocityOptimizer'>,
+                enabled=True,
+                zero_initial_velocities=False,
+                linear_l2_penalty=1e-06,
+                angular_l2_penalty=1e-05
+            ),
+            feature_dim=13,
+            appearance_dim=8,
+            implementation='tcnn',
+            actor_flip_probability=0.5,
+            flip_actors_at_init=True,
+            n_far_points=300000,
+            depth_lambda=0.1,
+            depth_loss_quantile_threshold=0.95,
+            intensity_lambda=1.0,
+            ray_drop_lambda=0.1,
+            compensate_rs_camera=True,
+            compensate_rs_lidar=True,
+            radius_clip_pix=0.0,
+            radius_clip_lidar=0.0,
+            line_of_sight_lambda=0.1,
+            line_of_sight_dist=0.8,
+            min_points_per_actor=500,
+            rgb_decoder_hidden_dim=32,
+            rgb_decoder_kernel_size=3,
+            rgb_decoder_num_hidden_blocks=1
+        ),
+        calc_fid_steps=(30000,)
+    ),
+    optimizers={
+        'means': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.00016,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': ExponentialDecaySchedulerConfig(
+                _target=<class 'nerfstudio.engine.schedulers.ExponentialDecayScheduler'>,
+                lr_pre_warmup=1e-08,
+                lr_final=1.6e-06,
+                warmup_steps=0,
+                max_steps=30000,
+                ramp='cosine'
+            )
+        },
+        'features_dc': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.0025,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': None
+        },
+        'features_rest': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.0025,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': None
+        },
+        'opacities': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.05,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': None
+        },
+        'scales': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.005,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': None
+        },
+        'quats': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.001,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': None
+        },
+        'camera_opt': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.0001,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': ExponentialDecaySchedulerConfig(
+                _target=<class 'nerfstudio.engine.schedulers.ExponentialDecayScheduler'>,
+                lr_pre_warmup=1e-08,
+                lr_final=5e-07,
+                warmup_steps=0,
+                max_steps=30000,
+                ramp='cosine'
+            )
+        },
+        'camera_velocity_opt_linear': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.001,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': ExponentialDecaySchedulerConfig(
+                _target=<class 'nerfstudio.engine.schedulers.ExponentialDecayScheduler'>,
+                lr_pre_warmup=0,
+                lr_final=1e-06,
+                warmup_steps=1000,
+                max_steps=30000,
+                ramp='cosine'
+            )
+        },
+        'camera_velocity_opt_angular': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.0002,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': ExponentialDecaySchedulerConfig(
+                _target=<class 'nerfstudio.engine.schedulers.ExponentialDecayScheduler'>,
+                lr_pre_warmup=0,
+                lr_final=1e-07,
+                warmup_steps=1000,
+                max_steps=30000,
+                ramp='cosine'
+            )
+        },
+        'camera_velocity_opt_time_to_center_pixel': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.0002,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': ExponentialDecaySchedulerConfig(
+                _target=<class 'nerfstudio.engine.schedulers.ExponentialDecayScheduler'>,
+                lr_pre_warmup=0,
+                lr_final=1e-07,
+                warmup_steps=10000,
+                max_steps=30000,
+                ramp='cosine'
+            )
+        },
+        'trajectory_opt': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.001,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=0
+            ),
+            'scheduler': ExponentialDecaySchedulerConfig(
+                _target=<class 'nerfstudio.engine.schedulers.ExponentialDecayScheduler'>,
+                lr_pre_warmup=1e-08,
+                lr_final=0.0001,
+                warmup_steps=2500,
+                max_steps=20001,
+                ramp='cosine'
+            )
+        },
+        'fields': {
+            'optimizer': AdamOptimizerConfig(
+                _target=<class 'torch.optim.adam.Adam'>,
+                lr=0.001,
+                eps=1e-15,
+                max_norm=None,
+                weight_decay=1e-06
+            ),
+            'scheduler': ExponentialDecaySchedulerConfig(
+                _target=<class 'nerfstudio.engine.schedulers.ExponentialDecayScheduler'>,
+                lr_pre_warmup=1e-08,
+                lr_final=0.001,
+                warmup_steps=500,
+                max_steps=20001,
+                ramp='cosine'
+            )
+        }
+    },
+    vis='tensorboard',
+    data=None,
+    prompt=None,
+    relative_model_dir=WindowsPath('nerfstudio_models'),
+    load_scheduler=True,
+    load_optimizer=True,
+    steps_per_save=300,
+    steps_per_eval_batch=0,
+    steps_per_eval_image=500,
+    steps_per_eval_all_images=2500,
+    max_num_iterations=300,
+    mixed_precision=False,
+    use_grad_scaler=False,
+    save_only_latest_checkpoint=True,
+    checkpoint_saving_tracker=MetricTrackerConfig(
+        _target=<class 'nerfstudio.engine.trainer.MetricTracker'>,
+        metric=None,
+        higher_is_better=True,
+        margin=0.05
+    ),
+    early_stopping_tracker=MetricTrackerConfig(
+        _target=<class 'nerfstudio.engine.trainer.MetricTracker'>,
+        metric=None,
+        higher_is_better=True,
+        margin=0.1
+    ),
+    load_dir=None,
+    load_step=None,
+    load_config=None,
+    load_checkpoint=None,
+    training_start_step=None,
+    log_gradients=False,
+    gradient_accumulation_steps={}
+)
+������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������
+[10:35:26] Saving config to:                                                                    experiment_config.py:139
+           C:\codex\outputs\training\smoke_300\splatad\2026-09-23_023519_714812Z\config.yml                             
+c:\codex\third_party\neurad-studio\nerfstudio\engine\trainer.py:189: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.grad_scaler = GradScaler(enabled=self.use_grad_scaler)
+[10:35:27] Saving checkpoints to:                                                                         trainer.py:194
+           C:\codex\outputs\training\smoke_300\splatad\2026-09-23_023519_714812Z\nerfstudio_models                      
+[10:35:46] Painting lidar points                                                    full_images_lidar_datamanager.py:121
+           Caching / undistorting train images                                            full_images_datamanager.py:240
+
+           Caching train lidars                                                     full_images_lidar_datamanager.py:298
+
+Downloading: "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth" to C:\codex\outputs\torch_cache\hub\checkpoints\alexnet-owt-7be5be79.pth
+Traceback (most recent call last):
+  File "C:\anconda\envs\3dgs\lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\anconda\envs\3dgs\lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\anconda\envs\3dgs\lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\anconda\envs\3dgs\lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\anconda\envs\3dgs\lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\anconda\envs\3dgs\lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\anconda\envs\3dgs\lib\http\client.py", line 1447, in connect
+    super().connect()
+  File "C:\anconda\envs\3dgs\lib\http\client.py", line 941, in connect
+    self.sock = self._create_connection(
+  File "C:\anconda\envs\3dgs\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\anconda\envs\3dgs\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] ��һ�ַ���Ȩ�޲������ķ�ʽ����һ�������׽��ֵĳ��ԡ�
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\codex\third_party\neurad-studio\nerfstudio\scripts\train.py", line 278, in <module>
+    entrypoint()
+  File "C:\codex\third_party\neurad-studio\nerfstudio\scripts\train.py", line 269, in entrypoint
+    main(
+  File "C:\codex\third_party\neurad-studio\nerfstudio\scripts\train.py", line 254, in main
+    launch(
+  File "C:\codex\third_party\neurad-studio\nerfstudio\scripts\train.py", line 196, in launch
+    main_func(local_rank=0, world_size=world_size, config=config)
+  File "C:\codex\third_party\neurad-studio\nerfstudio\scripts\train.py", line 106, in train_loop
+    trainer.setup()
+  File "c:\codex\third_party\neurad-studio\nerfstudio\engine\trainer.py", line 210, in setup
+    self.pipeline = self.config.pipeline.setup(
+  File "c:\codex\third_party\neurad-studio\nerfstudio\configs\base_config.py", line 54, in setup
+    return self._target(self, **kwargs)
+  File "c:\codex\third_party\neurad-studio\nerfstudio\pipelines\splatad_pipeline.py", line 160, in __init__
+    self._model = config.model.setup(
+  File "c:\codex\third_party\neurad-studio\nerfstudio\configs\base_config.py", line 54, in setup
+    return self._target(self, **kwargs)
+  File "c:\codex\third_party\neurad-studio\nerfstudio\models\splatad.py", line 300, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\codex\third_party\neurad-studio\nerfstudio\models\base_model.py", line 85, in __init__
+    self.populate_modules()  # populate the modules
+  File "c:\codex\third_party\neurad-studio\nerfstudio\models\splatad.py", line 381, in populate_modules
+    self.lpips = LearnedPerceptualImagePatchSimilarity(normalize=True)
+  File "C:\codex\.venv-gpu\lib\site-packages\torchmetrics\image\lpip.py", line 123, in __init__
+    self.net = _NoTrainLpips(net=net_type)
+  File "C:\codex\.venv-gpu\lib\site-packages\torchmetrics\functional\image\lpips.py", line 305, in __init__
+    self.net = net_type(pretrained=not self.pnet_rand, requires_grad=self.pnet_tune)
+  File "C:\codex\.venv-gpu\lib\site-packages\torchmetrics\functional\image\lpips.py", line 110, in __init__
+    alexnet_pretrained_features = _get_net("alexnet", pretrained)
+  File "C:\codex\.venv-gpu\lib\site-packages\torchmetrics\functional\image\lpips.py", line 57, in _get_net
+    pretrained_features = getattr(tv, net)(weights=getattr(tv, _weight_map[net]).IMAGENET1K_V1).features
+  File "C:\anconda\envs\3dgs\lib\site-packages\torchvision\models\_utils.py", line 142, in wrapper
+    return fn(*args, **kwargs)
+  File "C:\anconda\envs\3dgs\lib\site-packages\torchvision\models\_utils.py", line 228, in inner_wrapper
+    return builder(*args, **kwargs)
+  File "C:\anconda\envs\3dgs\lib\site-packages\torchvision\models\alexnet.py", line 117, in alexnet
+    model.load_state_dict(weights.get_state_dict(progress=progress, check_hash=True))
+  File "C:\anconda\envs\3dgs\lib\site-packages\torchvision\models\_api.py", line 90, in get_state_dict
+    return load_state_dict_from_url(self.url, *args, **kwargs)
+  File "C:\anconda\envs\3dgs\lib\site-packages\torch\hub.py", line 871, in load_state_dict_from_url
+    download_url_to_file(url, cached_file, hash_prefix, progress=progress)
+  File "C:\anconda\envs\3dgs\lib\site-packages\torch\hub.py", line 712, in download_url_to_file
+    u = urlopen(req)
+  File "C:\anconda\envs\3dgs\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\anconda\envs\3dgs\lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+  File "C:\anconda\envs\3dgs\lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\anconda\envs\3dgs\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\anconda\envs\3dgs\lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "C:\anconda\envs\3dgs\lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10013] ��һ�ַ���Ȩ�޲������ķ�ʽ����һ�������׽��ֵĳ��ԡ�>

@@ -1,0 +1,9 @@
+name: smoke_300
+sequence: '028'
+iterations: 300
+seed: 42
+cameras: [front]
+dataset_end_fraction: 0.2
+data: data/pandaset
+output_dir: outputs/training
+vis: tensorboard
